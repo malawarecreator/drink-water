@@ -4,8 +4,9 @@ import 'package:flutter/material.dart';
 import 'package:drinkwater/ThemeText.dart';
 import 'package:drinkwater/Filler.dart';
 
+
 void main() {
-  runApp(const MainApp());
+  runApp(MainApp());
 }
 
 class MainApp extends StatefulWidget {
@@ -46,7 +47,7 @@ class _MainAppState extends State<MainApp> {
                 onPressed: _drinkWater,
                 child: ThemeText(text: "Click to drink water"),
               ),
-              ThemeText(text: "${_drinks} so far")
+              ThemeText(text: "$_drinks so far")
             ],
           ),
         ),
